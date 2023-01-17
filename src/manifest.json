@@ -18,6 +18,14 @@
 
   "icons": {
         "64": "images/stop-64.png"
-    }
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["https://*/*", "http://*/*"],
+        "css": ["styles.css"],
+        "js": ["script.js"]
+      }
+    ]
 }
 
