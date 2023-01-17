@@ -5,13 +5,13 @@
   "version": "1.0",
 
   "action": {
+    "default_popup": "popup.html",
     "default_icon": {
       "16": "images/stop-16.png",
       "32": "images/stop-32.png",
       "64": "images/stop-64.png"
     }
   },
-
   "background": {
     "service_worker" : "background.js"
   },
