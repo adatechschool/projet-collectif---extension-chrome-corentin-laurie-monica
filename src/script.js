@@ -1,5 +1,26 @@
+<<<<<<< HEAD
 //let blockSite = (document.body.innerHTML = "<body></body>");
 //let timerON = ();
+=======
+function blackBackground() {
+    document.body.innerHTML = "<body></body>";
+    document.body.setAttribute("id", "color");
+
+    setTimeout(() => {
+        confirm("Attention le contenu de cette page est susceptible d'être inapproprié, souhaitez-vous continuer ?");
+    }, "1000");
+
+
+};
+
+blackBackground();
+
+
+
+
+
+
+>>>>>>> cef5c95d416c7c257edd79df79f8e3b6ac56e5d3
 
 
 // alert("Attention !");
