@@ -3,7 +3,10 @@
   "name": "FavØris",
   "description": "Extension pour trier vos accès aux sites-web",
   "version": "1.0",
-
+  "permissions": [
+    "activeTab"
+  ],
+  
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
