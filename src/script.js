@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-//let blockSite = (document.body.innerHTML = "<body></body>");
-//let timerON = ();
-=======
 function blackBackground() {
     document.body.innerHTML = "<body></body>";
     document.body.setAttribute("id", "color");
@@ -14,16 +10,6 @@ function blackBackground() {
 };
 
 blackBackground();
-
-
-
-
-
-
->>>>>>> cef5c95d416c7c257edd79df79f8e3b6ac56e5d3
-
-
-// alert("Attention !");
 
 let interdits = [
     "https://www.youporn.fr/",
