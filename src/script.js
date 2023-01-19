@@ -11,15 +11,6 @@ function blackBackground() {
 
 blackBackground();
 
-
-
-
-
-
-
-
-// alert("Attention !");
-
 let interdits = [
     "https://www.youporn.fr/",
     "https://www.xvideos.com/",
