@@ -1,4 +1,4 @@
-body {
+/*body {
     background-color:red !important;
     width: 100%;
     height: 100%;
@@ -20,4 +20,11 @@ body {
   }
   body:after {
     bottom: 0;
-  }
+  }*/
+
+#color {
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
