@@ -4,6 +4,12 @@
   "description": "Extension pour trier vos accès aux sites-web",
   "version": "1.0",
   
+  "author" : {
+    "author 1": "Corentin Monvillers",
+    "author 2": "Laurie Biguet",
+    "author 3": "Mônica Salmazo"
+  },
+  
   
   "action": {
     "default_popup": "popup.html",
