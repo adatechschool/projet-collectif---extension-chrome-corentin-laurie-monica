@@ -3,9 +3,7 @@
   "name": "FavØris",
   "description": "Extension pour trier vos accès aux sites-web",
   "version": "1.0",
-  "permissions": [
-    "activeTab"
-  ],
+  
   
   "action": {
     "default_popup": "popup.html",
@@ -22,17 +20,15 @@
   "icons": {
         "64": "images/stop-64.png"
     },
+
     "host_permissions": ["<all_urls>"],
-  
+    "permissions": ["activeTab","scripting", "tabs", "storage"],
 
     "content_scripts": [
       {
         "matches": ["https://*/*", "http://*/*"],
-        "css": ["styles.css"],
         "js": ["script.js"]
-  
-      }
-    ]
+      }]
 }
 
 

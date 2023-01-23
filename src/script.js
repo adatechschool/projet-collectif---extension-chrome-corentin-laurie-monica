@@ -1,31 +1,29 @@
-// function blackBackground() {
-//     document.body.innerHTML = "<body></body>";
-//     document.body.setAttribute("id", "color");
 
-//     setTimeout(() => {
-//         confirm("Attention le contenu de cette page est susceptible d'être inapproprié, souhaitez-vous continuer ?");
-//     }, "1000");
+//on écoute le changement du storage déclenché par le bouton de la popup
+chrome.storage.local.onChanged.addListener((changes, local) => {
+    //puis on lance les quotes + les lamas
+    blackBackground();
+})
 
+function blackBackground() {
 
-// };
+    const newElement = document.createElement("div");
+    newElement.setAttribute("style", "background-color:black !important; width: 100vw !important; height: 100vh !important; position: fixed !important; z-index: 1000000000000000000000000000000000000000000000000 !important");
+    console.log(document.body.appendChild(newElement));
 
-// blackBackground();
-
-
-
-
-
-
-let interdits = [
-    "https://www.youporn.fr/",
-    "https://www.xvideos.com/",
-    "https://coolors.co/",
-    "https://www.lovelace.adatechschool.fr/portal/",
-];
-
-for (let i = 0; i< interdits.length; i++) {
-    console.log(interdits[i]);
 };
+
+
+// let interdits = [
+//     "https://www.youporn.fr/",
+//     "https://www.xvideos.com/",
+//     "https://coolors.co/",
+//     "https://www.lovelace.adatechschool.fr/portal/",
+// ];
+
+// for (let i = 0; i< interdits.length; i++) {
+//     console.log(interdits[i]);
+// };
 
 
 
