@@ -12,9 +12,9 @@
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "images/stop-16.png",
-      "32": "images/stop-32.png",
-      "64": "images/stop-64.png"
+      "16": "images/LOGO rouge 16.png",
+      "32": "images/LOGO rouge 32.png",
+      "64": "images/LOGO rouge 64.png"
     }
   },
   
@@ -23,7 +23,7 @@
   },
 
   "icons": {
-        "64": "images/stop-64.png"
+        "64": "images/LOGO rouge 64.png"
     },
 
     "host_permissions": ["<all_urls>"],

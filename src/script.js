@@ -30,27 +30,6 @@ function blackBackground() {
   console.log(document.body.appendChild(newElement));
 }
 
-// let interdits = [
-//     "https://www.youporn.fr/",
-//     "https://www.xvideos.com/",
-//     "https://coolors.co/",
-//     "https://www.lovelace.adatechschool.fr/portal/",
-// ];
-
-// for (let i = 0; i< interdits.length; i++) {
-//     console.log(interdits[i]);
-// };
-
-//boucle pour parcourir le tableau//
-//console.log//
-
-// localStorage.setItem("interdits", JSON.stringify(interdits));
-
-// let timerSite = [
-
-};
-
-// blackBackground();
 
 let interdits = [
     "https://coolors.co/",
