@@ -9,36 +9,30 @@ function blackBackground() {
 
 };
 
-blackBackground();
+// blackBackground();
 
 let interdits = [
-    "https://www.youporn.fr/",
-    "https://www.xvideos.com/",
     "https://coolors.co/",
     "https://www.lovelace.adatechschool.fr/portal/",
 ];
 
+/*window location recupere le site actuel du User*/
 for (let i = 0; i< interdits.length; i++) {
     console.log(interdits[i]);
-};
+    if (window.location.href == interdits[i]) {
+        return blackBackground();
+    }
+}
 
 
-
-//boucle pour parcourir le tableau//
-//console.log//
-
-// localStorage.setItem("interdits", JSON.stringify(interdits));
-
-// let timerSite = [
+// let timerSites = [
 //     "https://fr-fr.facebook.com/"
 // ];
 // localStorage.setItem("timerSite", JSON.stringify(timerSite));
+// Jérémy a dit qu'on n'a pas besoin du localStorage car on a la liste dans un tableau
 
 
-    // if (interdits) {
-               
-    //     console.log(interdits.includes());
-    // };
-    // elseif (timerSite) {
-    //     console.log ()
+   
+    // elseif (timerSites) {;
+    //     console.log ();
     // };
