@@ -3,7 +3,14 @@
   "name": "FavØris",
   "description": "Extension pour trier vos accès aux sites-web",
   "version": "1.0",
-
+  
+  "author" : {
+    "author 1": "Corentin Monvillers",
+    "author 2": "Laurie Biguet",
+    "author 3": "Mônica Salmazo"
+  },
+  
+  
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -20,12 +27,15 @@
         "64": "images/stop-64.png"
     },
 
+    "host_permissions": ["<all_urls>"],
+    "permissions": ["activeTab","scripting", "tabs", "storage"],
+
     "content_scripts": [
       {
         "matches": ["https://*/*", "http://*/*"],
-        "css": ["styles.css"],
-        "js": ["script.js", "popup.js"]
-      }
-    ]
+        "js": ["script.js"]
+      }]
 }
+
+
 
