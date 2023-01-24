@@ -1,20 +1,42 @@
-console.log("This is a popup!")
-
-
 document.addEventListener('DOMContentLoaded', function (){  
-    //on génère la quote au click du bouton
-    document.querySelector("#red").addEventListener("click", red, false) 
-    function red(){
-        confirm("Vous allez bloquer le site à 100%");
-        //au click du bouton 'yes please' on bloque la page
-    };
-    document.querySelector("#green").addEventListener("click", green, false)
-    function green(){
-        confirm("Vous allez bloquer toutes les images de ce site");
-    }
-    document.querySelector("#blue").addEventListener("click", blue, false)
-    function blue(){
-        confirm("Vous allez installer un timer sur ce site")
-    }
+  //on écoute le bouton pour créer l'objet
+  document.querySelector('#red').addEventListener('click', onclick, false) 
+  function onclick(){
+    alert("Blocage du site")
+      //au click du bouton, on créé l'objet dans le storage 
+      //pour pouvoir écouter le changement dans le script.js
+      chrome.storage.local.set({
+            status : objVerif = {
+            value: true
+          } 
+        })
+  };
+  // document.querySelector('#green').addEventListener('click', green, false) 
+  // function green(){
+  //   alert("IMAGES")
+  //     //au click du bouton, on créé l'objet dans le storage 
+  //     //pour pouvoir écouter le changement dans le script.js
+  //     chrome.storage.local.set({
+  //         status: objVerif = {
+  //           value: true
+  //         }
+  //       })
+  // };
+  // document.querySelector('#blue').addEventListener('click', blue, false) 
+  // function blue(){
+  //   alert("Timer")
+  //     //au click du bouton, on créé l'objet dans le storage 
+  //     //pour pouvoir écouter le changement dans le script.js
+  //     chrome.storage.local.set({
+  //         status: objVerif = {
+  //           value: true
+  //         }
+  //       })
+  // };
 }, false);
+
+
+  
+
+  
  

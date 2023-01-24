@@ -25,17 +25,15 @@
   "icons": {
         "64": "images/stop-64.png"
     },
+
     "host_permissions": ["<all_urls>"],
-    "permissions": ["unlimitedStorage", "tabs"],
+    "permissions": ["activeTab","scripting", "tabs", "storage"],
 
     "content_scripts": [
       {
         "matches": ["https://*/*", "http://*/*"],
-        "css": ["styles.css"],
         "js": ["script.js"]
-  
-      }
-    ]
+      }]
 }
 
 
