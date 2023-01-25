@@ -6,6 +6,11 @@ body {
   flex-direction: column;
   align-items: center;
   border: outset 10px;
+  border-bottom-color: #9ae59c;
+  border-top-color: #ff646f;
+  border-left-color: #9ae59c;
+  border-right-color: #ff646f;
+
 }
 
 
