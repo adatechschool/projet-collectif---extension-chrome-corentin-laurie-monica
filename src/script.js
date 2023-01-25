@@ -16,7 +16,7 @@ chrome.storage.local.onChanged.addListener((change) => {
     console.log("CA marche");
     for (let i = 0; i < interdits.length; i++) {
       console.log("Je suis dans la boucle");
-      if (result.objVerif == false && window.location.href == interdits[i]) {
+      if (result.objVerif == false /*&& window.location.href == interdits[i]*/) {
         blackBackground();
         console.log("IL est là");
       } else if (result.objVerif == true) {
