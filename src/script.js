@@ -26,6 +26,14 @@ chrome.storage.local.onChanged.addListener((change) => {
   });
 });
 
+// document.addEventListener('keydown', function(event) {
+//   if (!event.ctrlKey && event.altKey && event.which === 80/*P*/) {
+//       // Dispatch a custom message, handled by your extension
+//       // chrome.runtime.sendMessage('Alt+P');
+//       console.log("toto")
+//   }
+// }, true); // <-- True is important
+
 
 function blackBackground() {
   const newElement = document.createElement("div");

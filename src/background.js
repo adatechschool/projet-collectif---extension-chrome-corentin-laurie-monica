@@ -11,6 +11,15 @@
   //   }
   // });
 
-chrome.action.setBadgeText({ text:'ON' });
-chrome.action.setBadgeBackgroundColor({ color : 'green'});
+  chrome.commands.onCommand.addListener((command) => {
+    console.log("coucou ici");
+  });
 
+  // chrome.commands.onCommand.addListener((command) => {
+  //   if (command.raccourciOn) {
+  //     console.log("raccourci on ok");
+  //   } else if (command.raccourciOff) {
+  //     console.log("raccourci off ok");
+  //   }
+  //   // console.error(`Command: ${command}`);
+  // });
